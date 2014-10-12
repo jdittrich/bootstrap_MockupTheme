@@ -1,0 +1,89 @@
+.borderMixin{
+	border-width: 2px;
+	border-style: solid;
+	border-radius:2px;
+	border-color: black;
+}
+
+.blackWhiteMixin{
+	background-color: white;
+	color:black;
+}
+
+.radiusNormMixin{
+	border-radius: 2px;
+}
+
+.btn {
+	.borderMixin;
+	box-shadow: 4px 4px rgba(0,0,0,0.5);
+	font-weight:bold;
+}
+
+.btn.active{
+	box-shadow: none;
+	background-color: darken(@brand-primary, 15%);
+	border-top:4px solid black;
+	border-left:4px solid black;
+	border-bottom: none;
+	border-right:none;
+}
+
+
+
+
+.lable{
+	.radiusNormMixin;
+}
+
+.img-thumbnail,.list-group-item, list-group-item.active, .panel{
+	.borderMixin;
+	.blackWhiteMixin;
+}
+
+.well, .jumbotron, .list-group-item.active {
+	.borderMixin;
+} 
+
+.page-header{
+	border-bottom: 2px #000;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #000;
+}
+
+.nav-tabs > li{
+	margin-bottom: -2px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border-color: #000 #000;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #000;
+    cursor: default;
+}
+
+.navbar-default, .pager li > a, .pager li > span{
+	.borderMixin;
+}
+
+.progress{
+	box-shadow: none;
+}
+
+.btn-success, .btn-info, .btn-warning, .btn-danger, .panel-success, .panel-warning, .panel-info, .panel-danger, .lable-success, .lable-info, .lable-warning, .lable-danger{
+	color:black;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: gray;
+    color: white;
+}
+
+/*when using comic neue, bold font wight should be used for controls */
+.navbar, .nav, .btn, .dropdown, form{
+	font-weight: bold;
+}
