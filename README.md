@@ -3,6 +3,8 @@ bootstrap_MockupTheme
 
 a bootstrap theme that will make your site look more like a prototype.
 
+Possibly useful if you want to show some ideas which you directly prototyped in code. Using a theme which shows that the design is preliminary may get you around »I dont like this color« and »can we change this font to…«-discussions so you can focus on more general things like determining if the site needs a prominent login or a sidebar etc.
+
 setup
 -----
 1.) clone this repo
