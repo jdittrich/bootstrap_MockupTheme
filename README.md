@@ -15,7 +15,7 @@ setup
 and `/less/utilities.less` (last line) files of bootstrap. (the current paths work out of the box, if you place the repo’s files 
 in a new folder in bootstraps root folder (the one with `README.md` and the `LICENSE` in) 
 
-4.) open a terminal, navigate to the folder you put this repo (bootstrap_MockupTheme) in and run `lessc custom-bootstrap.less bootstrap.css`
+4.) open a terminal, navigate to the folder you put this repo (bootstrap_MockupTheme) in and run `lessc mockupTheme-bootstrap.less bootstrap.css`
 
 The resulting `css` file is created from the standard bootstrap files and has the MockupTheme customizations baked in. 
 
