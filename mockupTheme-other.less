@@ -1,52 +1,59 @@
 .borderMixin{
-	border-width: 2px;
-	border-style: solid;
-	border-radius:2px;
-	border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius:2px;
+    border-color: black;
 }
 
 .blackWhiteMixin{
-	background-color: white;
-	color:black;
+    background-color: white;
+    color:black;
 }
 
 .radiusNormMixin{
-	border-radius: 2px;
+    border-radius: 2px;
+}
+
+/*use redacted for paragraphs...*/
+p{
+    font-family: "Redacted Script","Comic Neue","Comic Sans MS", "Comic Sans";
+}
+/*...but not for buttons, and not for inputs and nav (which should be in divs anyway)*/
+p .btn,p .input-group, p .nav{
+    font-family: "Comic Neue","Comic Sans MS", "Comic Sans";
 }
 
 .btn {
-	.borderMixin;
-	box-shadow: 4px 4px rgba(0,0,0,0.5);
-	font-weight:bold;
+    .borderMixin;
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+    font-weight:bold;
 }
 
 .btn.active{
-	box-shadow: none;
-	background-color: darken(@brand-primary, 15%);
-	border-top:4px solid black;
-	border-left:4px solid black;
-	border-bottom: none;
-	border-right:none;
+    box-shadow: none;
+    background-color: darken(@brand-primary, 15%);
+    border-top:4px solid black;
+    border-left:4px solid black;
+    border-bottom: none;
+    border-right:none;
 }
-
-
 
 
 .lable{
-	.radiusNormMixin;
+    .radiusNormMixin;
 }
 
 .img-thumbnail,.list-group-item, list-group-item.active, .panel{
-	.borderMixin;
-	.blackWhiteMixin;
+    .borderMixin;
+    .blackWhiteMixin;
 }
 
 .well, .jumbotron, .list-group-item.active {
-	.borderMixin;
-} 
+    .borderMixin;
+}
 
 .page-header{
-	border-bottom: 2px #000;
+    border-bottom: 2px #000;
 }
 
 .nav-tabs {
@@ -54,7 +61,7 @@
 }
 
 .nav-tabs > li{
-	margin-bottom: -2px;
+    margin-bottom: -2px;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -67,15 +74,15 @@
 }
 
 .navbar-default, .pager li > a, .pager li > span{
-	.borderMixin;
+    .borderMixin;
 }
 
 .progress{
-	box-shadow: none;
+    box-shadow: none;
 }
 
 .btn-success, .btn-info, .btn-warning, .btn-danger, .panel-success, .panel-warning, .panel-info, .panel-danger, .lable-success, .lable-info, .lable-warning, .lable-danger{
-	color:black;
+    color:black;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -85,5 +92,5 @@
 
 /*when using comic neue, bold font wight should be used for controls */
 .navbar, .nav, .btn, .dropdown, form{
-	font-weight: bold;
+    font-weight: bold;
 }
