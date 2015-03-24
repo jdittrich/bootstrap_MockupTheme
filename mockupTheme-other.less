@@ -1,96 +1,164 @@
+/*fonts*/
+
+@font-face {
+	font-family: 'Redacted Script';
+	src:
+		url('fonts/redacted-script-bold.woff2') format('woff2'),
+		url('fonts/redacted-script-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Redacted Script';
+	src:
+		url('fonts/redacted-script-light.woff2') format('woff2'),
+		url('fonts/redacted-script-light.woff') format('woff');
+	font-weight:200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Redacted Script';
+	src:
+		url('fonts/redacted-script-regular.woff2') format('woff2'),
+		url('fonts/redacted-script-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comic Neue';
+	src:
+		url('fonts/ComicNeue-Regular.woff2') format('woff2'),
+		url('fonts/ComicNeue-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comic Neue';
+	src:
+		url('fonts/ComicNeue-Bold.woff2') format('woff2'),
+		url('fonts/ComicNeue-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comic Neue';
+	src:
+		url('fonts/ComicNeue-Regular-Oblique.woff2') format('woff2'),
+		url('fonts/ComicNeue-Regular-Oblique.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Comic Neue';
+	src:
+		url('fonts/ComicNeue-Bold-Oblique.woff2') format('woff2'),
+		url('fonts/ComicNeue-Bold-Oblique.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+/*mixins*/
 .borderMixin{
-    border-width: 2px;
-    border-style: solid;
-    border-radius:2px;
-    border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius:2px;
+	border-color: black;
 }
 
 .blackWhiteMixin{
-    background-color: white;
-    color:black;
+	background-color: white;
+	color:black;
 }
 
 .radiusNormMixin{
-    border-radius: 2px;
+	border-radius: 2px;
 }
 
 /*use redacted for paragraphs...*/
 p{
-    font-family: "Redacted Script","Comic Neue","Comic Sans MS", "Comic Sans";
+	font-family: "Redacted Script","Comic Neue","Comic Sans MS", "Comic Sans";
 }
 /*...but not for buttons, and not for inputs and nav (which should be in divs anyway)*/
 p .btn,p .input-group, p .nav{
-    font-family: "Comic Neue","Comic Sans MS", "Comic Sans";
+	font-family: "Comic Neue","Comic Sans MS", "Comic Sans";
 }
 
 .btn {
-    .borderMixin;
-    box-shadow: 4px 4px rgba(0,0,0,0.5);
-    font-weight:bold;
+	.borderMixin;
+	box-shadow: 4px 4px rgba(0,0,0,0.5);
+	font-weight:bold;
 }
 
 .btn.active{
-    box-shadow: none;
-    background-color: darken(@brand-primary, 15%);
-    border-top:4px solid black;
-    border-left:4px solid black;
-    border-bottom: none;
-    border-right:none;
+	box-shadow: none;
+	background-color: darken(@brand-primary, 15%);
+	border-top:4px solid black;
+	border-left:4px solid black;
+	border-bottom: none;
+	border-right:none;
 }
 
 
 .lable{
-    .radiusNormMixin;
+	.radiusNormMixin;
 }
 
 .img-thumbnail,.list-group-item, list-group-item.active, .panel{
-    .borderMixin;
-    .blackWhiteMixin;
+	.borderMixin;
+	.blackWhiteMixin;
 }
 
 .well, .jumbotron, .list-group-item.active {
-    .borderMixin;
+	.borderMixin;
 }
 
 .page-header{
-    border-bottom: 2px #000;
+	border-bottom: 2px #000;
 }
 
 .nav-tabs {
-    border-bottom: 2px solid #000;
+	border-bottom: 2px solid #000;
 }
 
 .nav-tabs > li{
-    margin-bottom: -2px;
+	margin-bottom: -2px;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    border-color: #000 #000;
-    border-image: none;
-    border-style: solid;
-    border-width: 1px;
-    color: #000;
-    cursor: default;
+	border-color: #000 #000;
+	border-image: none;
+	border-style: solid;
+	border-width: 1px;
+	color: #000;
+	cursor: default;
 }
 
 .navbar-default, .pager li > a, .pager li > span{
-    .borderMixin;
+	.borderMixin;
 }
 
 .progress{
-    box-shadow: none;
+	box-shadow: none;
 }
 
 .btn-success, .btn-info, .btn-warning, .btn-danger, .panel-success, .panel-warning, .panel-info, .panel-danger, .lable-success, .lable-info, .lable-warning, .lable-danger{
-    color:black;
+	color:black;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background-color: gray;
-    color: white;
+	background-color: gray;
+	color: white;
 }
 
 /*when using comic neue, bold font wight should be used for controls */
 .navbar, .nav, .btn, .dropdown, form{
-    font-weight: bold;
+	font-weight: bold;
 }
