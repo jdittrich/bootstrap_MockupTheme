@@ -35,6 +35,7 @@ License – MIT/Expat
 ---------
 
 Copyright (c) 2011-2015 Twitter, Inc
+
 Copyright (c) 2014 Jan Dittrich
 
 
