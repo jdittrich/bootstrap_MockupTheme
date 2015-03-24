@@ -5,7 +5,10 @@ a bootstrap theme that will make your site look more like a prototype.
 
 Possibly useful if you want to show some ideas which you directly prototyped in code. Using a theme which shows that the design is preliminary may get you around »I don’t like this color« and »can we change this font to…«-discussions, so you can focus on more general things like determining if the site needs a prominent login or a sidebar etc.
 
-setup
+You can [download the theme here](https://github.com/jdittrich/bootstrap_MockupTheme/releases) (choose the `bootstrap_MockupTheme\[number\].zip)
+
+
+setup for development
 -----
 1.) clone this repo
 
