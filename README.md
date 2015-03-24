@@ -7,8 +7,13 @@ Possibly useful if you want to show some ideas which you directly prototyped in 
 
 You can [download the theme here](https://github.com/jdittrich/bootstrap_MockupTheme/releases) (choose the `bootstrap_MockupTheme\[number\].zip)
 
+Example
+-------
 
-setup for development
+![example](example.png)
+
+
+Setup for development
 -----
 1.) clone this repo
 
@@ -24,15 +29,12 @@ The resulting `css` file is created from the standard bootstrap files and has th
 
 This process is modeled after the one [described by Thomas Park in smashing magazine](http://www.smashingmagazine.com/2013/03/12/customizing-bootstrap/)
 
-example
--------
 
-![example](example.png)
 
-license – MIT/Expat
+License – MIT/Expat
 ---------
 
-
+Copyright (c) 2011-2015 Twitter, Inc
 Copyright (c) 2014 Jan Dittrich
 
 
